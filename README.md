@@ -19,7 +19,7 @@ Before the migration process, it is important to back up the database to ensure 
     - Alter the data type and length of the `ST_NAME` and `ST_LAST` columns in the `STUDENT` table from `STRING(20)` to `STRING(30)`.
     - Alter the name of the `INTEREST` column in the `INTEREST` table to `INTERESTS` and change its type to an array of strings.
 
-2. **Migrate Data**:
+2.  **Migrate Data**:
     - For the `STUDENT` table:
         - Update the `ST_ID` column to `STUDENT_ID`.
         - Alter the data type and length of `ST_NAME` and `ST_LAST` columns.
@@ -43,7 +43,6 @@ Before the migration process, it is important to back up the database to ensure 
 
 ## Troubleshooting
 - If any errors occur during the migration or rollback process, refer to PostgreSQL's documentation for troubleshooting steps.
-- Ensure that proper permissions are granted for executing migration scripts.
 
 ## Conclusion
 This README provides a comprehensive guide for migrating a PostgreSQL database schema and data, along with rollback procedures to revert changes if necessary. Following these instructions will help ensure a smooth migration process while minimizing the risk of data loss or corruption.
